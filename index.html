@@ -6,19 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/08a6076b2a.js" crossorigin="anonymous"></script>
-  
-  <!-- Custom CSS -->
+  <!-- my CSS file -->
   <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="0">
+<body data-bs-spy="scroll" data-bs-target="#navbar-main">
 
   <!-- Navbar -->
   <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top px-3">
     <a class="navbar-brand" href="#">Colm Callan</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar" aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="portfolioNavbar">
@@ -35,27 +31,54 @@
   </nav>
 
   <!-- Main Content -->
-  <div class="container" style="padding-top:6rem;">
+  <div class="container">
     <!-- Hero Card thing -->
-    <section id="hero" class="mb-4">
+    <section class="mb-4">
       <div class="card p-4 text-center">
-        <img src="https://via.placeholder.com/120" class="rounded-circle mb-3" alt="Profile" width="120" height="120">
+        <img src="images/ProfilePic.jpg" class="rounded-circle mb-3 mt-5 mx-auto" alt="Profile" width="120" height="120">
         <h1 class="card-title">Colm Callan</h1>
-        <p class="lead">Put somethinG Here</p>
+        <p class="lead">4th Year Computing with Software Development Student</p>
         <p>
-          <a href="https://www.linkedin.com/in/colm-callan/" class="btn btn-outline-primary me-2" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://www.linkedin.com/in/colm-callan/" class="btn btn-outline-primary me-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
           <a href="mailto:colmcallan04@email.com" class="btn btn-outline-primary me-2"><i class="fas fa-envelope"></i> Email</a>
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">More Contact Info</button>
         </p>
       </div>
     </section>
 
     <!-- About Me -->
     <section id="aboutme" class="mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h2>About Me</h2>
-          <p>placeholder text</p>
+      <div class="card p-4">
+        <div class="row">
+          <!-- Inner Card 1 -->
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 border border-dark">
+              <div class="card-body">
+                <h5 class="card-title">About Me</h5>
+                <p class="card-text">My name is Colm Callan</p>
+                <p class="card-text">I am 21 year old Irish Citizen</p>
+                <p class="card-text">Currently living in Newcastle Co. Dublin</p>
+              </div>
+            </div>
+          </div>
+          <!-- Inner Card 2 -->
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 border border-dark">
+              <div class="card-body">
+                <h5 class="card-title">Study</h5>
+                <p class="card-text">I am currently in my 4ht year studying a B.Sc. in computing with software development.</p>
+                <p class="card-text">I expect to graduate in May 2026</p>
+              </div>
+            </div>
+          </div>
+          <!-- Inner Card 3 -->
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 border border-dark">
+              <div class="card-body">
+                <h5 class="card-title">Card 3 </h5>
+                <p class="card-text">idk what to put here.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -64,8 +87,358 @@
     <section id="education" class="mb-4">
       <div class="card">
         <div class="card-body">
-          <h2>Education</h2>
-          <p>placeholder text</p>
+          <h2>Education & Grades</h2>
+          <p><b>2022 - Present:</b></p>
+          <p>Technonogical University Dublin</p>
+          <div class="d-flex align-items-center mb-3">
+            <p>Currently studying for B.Sc. in computing with sotfwaredevelopment (TU859)</p>
+            <a href="https://www.tudublin.ie/" target="_blank">
+              <img src="images/logo.png" alt="TU Dublin Logo" width="100" height="100">
+            </a>
+          </div>
+          <!-- Year Tabs -->
+          <ul class="nav nav-tabs mb-3">
+            <li class="nav-item">
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#year1">Year 1</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#year2">Year 2</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#year3">Year 3</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#year4">Year 4</button>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <!-- Year 1 Mods-->
+            <div class="tab-pane fade show active" id="year1">
+              <div class="accordion">
+                <!-- 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#mod1">
+                      Software Development 1
+                    </button>
+                  </h2>
+                  <div id="mod1" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: A
+                    </div>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#mod2">
+                      Visual Design and UX
+                    </button>
+                  </h2>
+                  <div id="mod2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: B
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#mod3">
+                      Computer Architecture
+                    </button>
+                  </h2>
+                  <div id="mod3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: B
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#mod4">
+                      OS Fundamentals
+                    </button>
+                  </h2>
+                  <div id="mod4" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: B
+                    </div>
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#mod5">
+                      Database Fundamentals
+                    </button>
+                  </h2>
+                  <div id="mod5" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: B
+                    </div>
+                  </div>
+                </div>
+                <!-- 6 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#mod6">
+                      Network Fundamentals
+                    </button>
+                  </h2>
+                  <div id="mod6" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: A
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Year 2 Mods-->
+            <div class="tab-pane fade" id="year2">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y2mod1">
+                      Software Development 2
+                    </button>
+                  </h2>
+                  <div id="y2mod1" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: A
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y2mod2">
+                      Databases 2
+                    </button>
+                  </h2>
+                  <div id="y2mod2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: B
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y2mod3">
+                      Networking Fundamentals 2
+                    </button>
+                  </h2>
+                  <div id="y2mod3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: B
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y2mod4">
+                      Software QA
+                    </button>
+                  </h2>
+                  <div id="y2mod4" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: B
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y2mod5">
+                      Business and info Systems
+                    </button>
+                  </h2>
+                  <div id="y2mod5" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: C
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y2mod6">
+                      Client Side Web Dev
+                    </button>
+                  </h2>
+                  <div id="y2mod6" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: B
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Year 3 Mods -->
+            <div class="tab-pane fade" id="year3">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y3mod1">
+                      Software Development 3
+                    </button>
+                  </h2>
+                  <div id="y3mod1" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: B
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y3mod2">
+                      Routing and switching essentials
+                    </button>
+                  </h2>
+                  <div id="y3mod2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: B
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y3mod3">
+                      Adavnced Database Technologies
+                    </button>
+                  </h2>
+                  <div id="y3mod3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: C
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y3mod4">
+                      Information Security
+                    </button>
+                  </h2>
+                  <div id="y3mod4" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: B
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y3mod5">
+                      Data Admin and Analysis
+                    </button>
+                  </h2>
+                  <div id="y3mod5" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: C
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y3mod6">
+                      Professional communications & industry relations
+                    </button>
+                  </h2>
+                  <div id="y3mod6" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: A
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Year 4 Mods -->
+            <div class="tab-pane fade" id="year4">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y4mod1">
+                      Software Architecture
+                    </button>
+                  </h2>
+                  <div id="y4mod1" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: TBD
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y4mod2">
+                      Enterprise performance arch
+                    </button>
+                  </h2>
+                  <div id="y4mod2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: TBD
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y4mod3">
+                      DevOps
+                    </button>
+                  </h2>
+                  <div id="y4mod3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: TBD
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y4mod4">
+                      Interactive Media Design
+                    </button>
+                  </h2>
+                  <div id="y4mod4" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: TBD
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#y4mod5">
+                      Final Year Project
+                    </button>
+                  </h2>
+                  <div id="y4mod5" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Grade: TBD
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -75,7 +448,14 @@
       <div class="card">
         <div class="card-body">
           <h2>Projects</h2>
-          <p>placeholder text</p>
+          <p>In my 2nd year of college I completed 2 projects</p>
+          <p><b>A Car sales website</b></p>
+          <p>this was a group project to show what we had learned so far using django to make a simple yet functional weba page</p>
+          <a href="https://github.com/Colm-Callan/Car-Project">View that project here on github</a>
+          <h1> </h1>
+          <p><b>A Furniture sales website</b></p>
+          <p>this was a group project to show our advanced skills in using django to create and deploy a working webpage</p>
+          <a href="https://github.com/Colm-Callan/Year2ProjectDeploy">View that project here on github</a>
         </div>
       </div>
     </section>
@@ -85,7 +465,14 @@
       <div class="card">
         <div class="card-body">
           <h2>Work Placement</h2>
-          <p>placeholder text</p>
+          <p><b>March 2025 - August 2025</b></p>
+          <p>Uniphar Group - IT Intern (Techops & Development team)</p>
+          <p>Roles & Responsibilities:</p>
+          <ul>
+            <li>Working on the company's transition to windows 11, wiping, re-imaging and building laptops for users. </li>
+            <li>Assisted with service desk tickets resolving various issues for users. </li>
+            <li>Worked with 2 different development teams working on Front and Back-end development using .NET and Angular. </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -95,7 +482,24 @@
       <div class="card">
         <div class="card-body">
           <h2>Skills & Achievements</h2>
-          <p>Lplaceholder text</p>
+          <p><b>Achievements:</b></p>
+          <ul>
+            <li>Completed a 6 month IT internship at Uniphar. </li>
+            <li>Full Driving Licence</li>
+            <li>Continuously scoring high grades during my studies. </li>
+            <li>NVIDIA deep machine learning certificate. </li>
+            <li>Junior and Leaving certificates. </li>
+            <li>Manual handling. </li>
+          </ul>
+
+          <p><b>Skills:</b></p>
+          <ul>
+            <li>Proficient in Microsoft office suit. </li>
+            <li>Adaptable and flexible in technical situations. </li>
+            <li>An understanding of Microsoft Azure, Intune and Active Directory. </li>
+            <li>Excellent communication skills, with experience creating easy and engaging materials, presenting skills and interacting with product owners. </li>
+            <li>Able to independently and collaboratively work on projects. </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -105,27 +509,52 @@
       <div class="card">
         <div class="card-body">
           <h2>Hobbies & Interests</h2>
-          <p>placeholder text</p>
+          <p><b>In my free time I enjoy</b></p>
+          <ul>
+            <li>Listening to music</li>
+            <li>playing with/walking my dog</li>
+            <li>playing video games</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contactme" class="mb-4">
       <div class="card">
         <div class="card-body text-center">
           <h2>Contact Me</h2>
-          <p>placeholder text</p>
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal"><i class="fas fa-address-card"></i> More Contact Info</button>
+          <h5>Please do not hesitate to reach out to me via the contacts below and I will be sure to get back to you.</h5>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <i class="fas fa-address-card"></i> More Contact Info
+          </button>
         </div>
       </div>
     </section>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border border-dark">
+          <div class="modal-header">
+            <h5 class="modal-title">My Contact Information</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body text-center">
+            <a href="mailto:colmcallan04@email.com" class="btn btn-outline-primary mb-2">
+              <i class="fas fa-envelope"></i> Email Me
+            </a>
+            <a href="https://www.linkedin.com/in/colm-callan/" target="_blank" class="btn btn-outline-primary mb-2">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Custom Scripts -->
-  <script src="js/scripts.js"></script>
 </body>
 </html>
