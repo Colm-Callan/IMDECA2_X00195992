@@ -3,16 +3,13 @@ Colm Callan Portfolio
 1) Bootstrap components used
 Navbar (navbar, navbar-expand-lg, navbar-dark, bg-primary, navbar-toggler, collapse)
 Cards (card, card-body, card-title, card-text)
-Grid system (container, row, col-md-4)
 Buttons (btn, btn-primary, btn-outline-primary)
 Modal (modal, modal-dialog, modal-content)
-Tabs (nav, nav-tabs, tab-pane)
 Accordion (accordion, accordion-item, accordion-header, accordion-button, accordion-collapse, accordion-body)
 
-
 2) Dynamic parts
-Navbar collapse responsive collapsing/expanding of the nav on small screens
-Modal "More Contact Info" opens a modal with links 
-Tabs — Year tabs that switch visible tab panels
-Accordion — Expand/collapse module items inside each year tab
-Scrollspy (data-bs-spy on <body>) this highlights nav links as the user scrolls the page 
+Navbar collapse on the small screens
+Modal "More Contact Info" opens a modal with links to details 
+Tabs Year tabs that switch visible tab panels
+Accordion Expand and collapse module parts for each year tab
+Scrollspy (data-bs-spy on <body>) this highlight nav links as you scroll the page 
